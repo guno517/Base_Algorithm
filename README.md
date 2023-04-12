@@ -15,4 +15,5 @@
   <li> 버블 정렬 (Bubble Sort) </li>
   <li> 삽입 정렬 (Insertion Sort) </li>
   <li> 병합 정렬 (Merge Sort) </li>
+  <li> sort() (JS의 정렬 함수) </li>
 </ol>
