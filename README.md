@@ -17,3 +17,8 @@
   <li> 병합 정렬 (Merge Sort) </li>
   <li> sort() (JS의 정렬 함수) </li>
 </ol>
+
+## 알고리즘 풀면서 나오는 실수들 정리
+<ul>
+  <li> 중복 제거의 set과 array </li>
+</ul>
