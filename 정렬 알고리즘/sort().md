@@ -40,3 +40,30 @@ console.log(arr);
   {name: '박철수', score: 85}, 
 ];
 ```
+
+### 정렬에 두가지 기준이 있을 경우
+```
+// 입력 (정렬 시 x축이 같다면 y축을 기준으로 정렬)
+5
+3 4
+1 1
+1 -1
+2 2
+3 3
+```
+
+```js
+const fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+let n = Number(input[0]);
+let arr = [];
+
+for(let i = 1; i <= n; i++){
+    arr.push(input[i].split(' '));
+}
+
+arr.sort((a,b) => a[0] - b[0] || a[1] - b[1]); //|| 를 사용하여 정렬 기준 2개를 충족시킨다.
+let answer = '';
+arr.map((num) => console.log(`${num[0]} ${num[1]} \n`));
+```
