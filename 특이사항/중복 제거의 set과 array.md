@@ -13,7 +13,7 @@ for(let i = 1; i <= n; i++){
 arr.sort((a,b) => a.length - b.length || a.localeCompare(b));
 // const set = new Set(arr);
 // const result = [...set]
-const result = Array.from(new Set(arr));
+const result = Array.from(new Set(arr)); // [...new Set(arr)]도 가능
 let answer = '';
 result.map((str) => answer += `${str} \n`);
 console.log(answer);
