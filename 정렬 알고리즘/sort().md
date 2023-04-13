@@ -65,5 +65,6 @@ for(let i = 1; i <= n; i++){
 
 arr.sort((a,b) => a[0] - b[0] || a[1] - b[1]); //|| 를 사용하여 정렬 기준 2개를 충족시킨다.
 let answer = '';
-arr.map((num) => console.log(`${num[0]} ${num[1]} \n`));
+arr.map((num) => answer += `${num[0]} ${num[1]} \n`);
+console.log(answer);
 ```
