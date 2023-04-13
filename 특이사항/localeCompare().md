@@ -6,3 +6,6 @@ let items = ['réservé', 'Premier', 'Cliché', 'communiqué', 'café', 'Adieu']
 items.sort( (a, b) => a.localeCompare(b, 'fr', {ignorePunctuation: true}));
 // ['Adieu', 'café', 'Cliché', 'communiqué', 'Premier', 'réservé']
 ```
+
+> ignorePunctuation <br />
+> 문장 부호를 무시해야 하는지 여부를 true, false로 설정한다. 기본 값은 false이다.
